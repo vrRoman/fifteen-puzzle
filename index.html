@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fifteen puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Enjoy :-)</h1>
+
+    <div class="field"></div>
+
+    <button class="button button_start-game">Start</button>
+    <button class="button button_stop-game button_disabled">Finish</button>
+
+    <div class="timer">
+        Your time:
+        <span class="timer__time">0:00:00</span>
+    </div>
+
+    <div class="results">
+        Your results:
+        <span class="results__values"></span>
+    </div>
+
+    <div class="win-block win-block_disabled">
+        <div class="modal-window">
+            Congratulations! You win!
+            <button class="button modal-window__button"
+                    onclick="this.parentElement.parentElement.classList.add('win-block_disabled')">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+    <script src="Results.js"></script>
+
+    <script src="Timer.js"></script>
+
+    <script src="Draw.js"></script>
+
+    <script src="Game.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
